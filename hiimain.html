@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Bulb</title>
+</head>
+<body>
+  <center>
+  <img src="offmamamo.jpg" alt="Bulb" id="bulbImage">
+  <button onclick="Bulb()">On</button>
+  <button onclick="Bulb()">Off</button>
+  </center>
+  <script>
+    var bulbImage = document.getElementById('bulbImage');
+    var isBulbOn = false;
+
+    function Bulb() {
+      isBulbOn = !isBulbOn;
+      var imagePath = isBulbOn ? 'onmamamohaha.jpg' : 'offmamamo.jpg';
+      bulbImage.src = imagePath;
+    }
+  
+  </script>
+
+</body>
+</html>
